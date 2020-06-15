@@ -151,10 +151,14 @@ export declare function writeObject(buffer: Buffer, offset: number, object: Obje
 export declare function writePointer(buffer: Buffer, offset: number,
     pointer: Buffer): void;
 
-/** Write a little-endian unsigned 64-bit int. */
+/** Write a big-endian unsigned 64-bit int. */
 export declare function writeUInt64BE(buffer: Buffer, offset: number, input: number): void;
-/** Write a little-endian unsigned 64-bit int. */
+/** Write a big-endian unsigned 64-bit int. */
 export declare function writeUInt64BE(buffer: Buffer, offset: number, input: string): void;
+/** Write a little-endian unsigned 64-bit int. */
+export declare function writeUInt64LE(buffer: Buffer, offset: number, input: number): void;
+/** Write a little-endian unsigned 64-bit int. */
+export declare function writeUInt64LE(buffer: Buffer, offset: number, input: string): void;
 
 /**
  * Attach object to buffer such.
